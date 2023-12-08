@@ -1,0 +1,21 @@
+CREATE TABLE `ebook-app`.`book_dtls` (
+  `bookId` INT NOT NULL AUTO_INCREMENT,
+  `bookname` VARCHAR(45) NULL,
+  `author` VARCHAR(45) NULL,
+  `price` DOUBLE NULL,
+  `bookCategory` VARCHAR(45) NULL,
+  `status` VARCHAR(45) NULL,
+  `photo` VARCHAR(45) NULL,
+  PRIMARY KEY (`bookId`));
+
+
+
+CREATE TABLE `ebook-app`.`cart` (
+  `cid` INT NOT NULL AUTO_INCREMENT,
+  `bid` INT NULL,
+  `uid` INT NULL,
+  `bookName` VARCHAR(45) NULL,
+  `author` VARCHAR(45) NULL,
+  `price` DOUBLE NULL,
+  `total_price` DOUBLE NULL,
+  PRIMARY KEY (`cid`));
